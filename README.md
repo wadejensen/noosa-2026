@@ -4,18 +4,19 @@ Interactive itinerary for a 4-day Noosa trip, Jul 30 – Aug 2, 2026.
 
 **Live site:** https://wadejensen.github.io/noosa-2026/
 
-## What's in the repo
+## File layout
 
-- `index.html` — the presentation itself. Single self-contained HTML file (~2.2 MB) with all assets (fonts, images, React) embedded and unpacked at runtime.
-- `.nojekyll` — tells GitHub Pages to skip Jekyll processing. Required because the presentation uses `{{ }}` template patterns that Jekyll would otherwise mangle.
+- `index.html` — the presentation (1.15 MB). References `assets/` for images.
+- `assets/` — airbnb photos referenced by `index.html`.
+- `.nojekyll` — disables Jekyll processing (required so `{{ }}` template patterns in the presentation aren't mangled).
+- `.gitignore` — ignores `.DS_Store`.
 
 ## Enabling GitHub Pages (one-time)
 
 1. Push this repo to GitHub.
 2. Repo → **Settings** → **Pages**.
-3. Under **Source**: select **Deploy from a branch**.
-4. **Branch**: `main`, **Folder**: `/ (root)`. Save.
-5. Wait ~1 minute — the site should be live at the URL above.
+3. **Source**: Deploy from a branch. **Branch**: `main`, **Folder**: `/ (root)`. Save.
+4. Wait ~1 minute — the site should be live at the URL above.
 
 ## Browser requirements
 
