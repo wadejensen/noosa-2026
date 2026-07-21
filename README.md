@@ -6,8 +6,9 @@ Interactive itinerary for a 4-day Noosa trip, Jul 30 – Aug 2, 2026.
 
 ## File layout
 
-- `index.html` — the presentation (1.15 MB). References `assets/` for images.
+- `index.html` — the presentation. References `assets/` for images.
 - `assets/` — airbnb photos referenced by `index.html`.
+- `itinerary.md` — text version of the schedule (source of truth for bookings + timings).
 - `.nojekyll` — disables Jekyll processing (required so `{{ }}` template patterns in the presentation aren't mangled).
 - `.gitignore` — ignores `.DS_Store`.
 
